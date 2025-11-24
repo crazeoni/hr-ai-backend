@@ -13,13 +13,13 @@ app.add_middleware(
     CORSMiddleware,
     allow_origins=[
         "http://localhost:3000",
-        "https://hr-ai-frontend-drab.vercel.app/",
-        "https://*.vercel.app"  # Allow all Vercel preview deployments
+        "https://hr-ai-frontend-drab.vercel.app"
     ],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
 # app.add_middleware(
 #     CORSMiddleware,
 #     allow_origins=["*"],   # or ["http://localhost:3000"]
